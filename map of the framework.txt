@@ -1,0 +1,29 @@
+app contains the logic
+public contains the static files and an index.php file
+.htaccess prevents going to the root directroty of the framework
+
+
+THE APP FOLDER
+it contains six folders and a .htaccess and a bootstrap.php file
+six folders are 
+1-config  >> defines the db connection and configration of the app
+2-controllers >> where the controllers go
+3-helpers >> where the helper files go like sessions, flash cards ...
+4-libs >> where the heart of our app goes files like 
+   Core.php >> which handles the url parameters
+   Model.php >> which handles the db 
+   Controller >> which handles the Controller logic 
+
+5-models which contains our models 
+6-views which contains our views 
+
+in the .htacess file there is a code that prevents the user from acessing this "app" folder directly
+and we are going to include all the files in the bootstrap.php 
+
+
+THE PUBLIC FOLDER
+
+it cotaints folders like js, css, img, index.php and a .htaccess 
+1-index.php where we include our bootstrap and a few other things like our core library
+2-.htacess where we map everything to the index.php with some apache directives, so when it requests some file and it's not there 
+it will go to the index unless it's there it will load the file up   
